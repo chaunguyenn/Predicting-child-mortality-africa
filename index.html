@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- Load plotly.js into the DOM -->
+     <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+
+    <!-- Setting up the HTML -->
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Child Mortality</title>
+  <meta name="author" content="Chau Nguyen">
+  <meta name="description" content="Predicting future child mortality in Africa">
+  <meta name="keywords" content="mortality,datavis">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+
+  <body>
+    <!--Code for CSS grid-->
+      <div class="grid-container">
+          <div class="main-text">
+            <h1> The Future of Africa - A look into the World's Highest Child Mortality Rate</h1>
+              <h5> By Chau Nguyen</h4>
+                <h5> Context: DECO3100 Data Visualization</h5>
+                
+              <img src="africahiv.jpeg" alt="Image1"> 
+              <h2> Looking at child mortalirty over the years </h2>
+              <p> Over the past few decades, we have achieved a huge accomplishment in 
+                sustaining human development - particularly in child mortality. The child
+                mortality refers to the probability of death of a child under the age of 5.
+                After the end of World War 2, the child mortality rate has been on a constant declining 
+                trend around the world. Governments worldwide as well as NGOs are actively taking actions to reduce the mortality rate, with a goal
+                of reaching 0% mortality rate in the coming years. The graph below demonstrates the 
+                mortality rate over time from 1950 until now. As of the most recent IHME data 2017, we are 
+                currently at a rate of 40.6 deaths per 1000 births. 
+          
+              </p>
+                <div id='myDiv1'><!-- Plotly chart will be drawn inside this DIV --></div>
+                  <p> Despite the great advancement of public healthcare and technology, 
+                    a mortality rate of 40.6 still poses as a huge loss to society. This 
+                    figure translates roughly to 5.4 million deaths per year, or 15,000 young children
+                    everyday. The visualization below, based on <a href="http://www.healthdata.org/data-visualization/child-mortality-2000-2017">IHME 2017 data</a>, 
+                    shows where children are most likely at risk of dying young.
+                  </p>
+                <div id='myDiv2'></div>
+                  <p> Research conducted by IHME indicated that children born in Africa are more likely to be impacted 
+                  by high mortality rate, especially in the Sub-Saharan regions (the areas that lie south of Sahara). These 
+                  Central African countries have an average of 80 deaths per 1000 births, which doubles the current 
+                  world mortality statistics.</p>
+
+                  <h2> What is happening in Africa?</h2>
+
+                  <img src="photo.jpeg" alt="Image2"> 
+
+                  <p>Historically, Africa is a continent with very harsh envionrments, and there are many variables
+                  that may explain the high death rate: lack of healthcare infrastructure, hygiene and fresh water; multiple tropical dieases and illnesses, etc. 
+                  However, when it comes to child mortality, there might be a more direct but often overlooked factor: breastfeeding statistics. 
+    
+                  For infants, the most nutritious food comes directly from the mothers' breastmilk. Breastfeeding has been
+                  <a href="https://www.healthline.com/health/breastfeeding/11-benefits-of-breastfeeding#benefits-for-baby">highly recommended by experts</a> 
+                  as it provides subtances and antibodies to fight natural infections and build immunity. A <a href="https://www.nature.com/articles/s41591-019-0525-0">study</a> conducted by the Institute for Health Metrics and Evaluation 
+                  at University of Washington looks into the prevalence of breastfeeding in Africa and found that in most African countries,
+                  the breastfeeding statistics is less than World Health Organization’s Global Nutrition Target of 50% prevalence.
+                  The visualization below shows the percentage of population that practice breastfeeding. </p>
+                  </p>
+                  
+                <div id='myDiv3'></div> 
+                  <p> As demonstrated on the visualization, most countries in Africa have less than 50% breastfeeding rate. 
+                    Countries located in Central Africa have the lowest breastfeeding statistics, particularly in Chad, Niger, Chabon,
+                    and Nigeria. When comparing these countries with their child mortality rate, there appears to be
+                    a correlation between these two statistics. In countries where breastfeeding practices
+                    are encouraged, the child mortality rates go lower compared to the countries where children are not breastfed.
+                    The graph below demonstrates this correlation. 
+                 </p>
+                <div id='myDiv4'></div>
+                  <p> For Africa to reduce the numbers of children dying, one solution could simply be to 
+                    encourage breastfeeding practices. Evidently, there are many variables that contribute to child mortality rate, 
+                    but it is still a good idea to get started with a practical and relevant solution. 
+                    Unless there will be dramatic changes in politic and cultural agendas, it will take Africa 20 years to reach
+                    a child mortality rate of 0 - that is, the year 2040. This figure was collected by graphing the previous years mortalirty rates
+                    and taking into account the rate of decline annually. 
+                  </p>
+                <div id='myDiv5'></div>
+                  <p>  The future often comes with a lot of uncertainty, but there is hope for African children. With 
+                    reliable data and prediction for the future, governments and policy makers can implement initiatives that would provide
+                    resources and assistance for the most impacted regions, in hope that there will be a better future. </p>
+  
+                  <p> Source: 
+                    <li>11 Benefits of Breastfeeding for Both Mom and Baby. (2021). Retrieved 4 May 2021, from https://www.healthline.com/health/breastfeeding/11-benefits-of-breastfeeding#benefits-for-baby</li>
+                    <li>Africa Exclusive Breastfeeding Prevalence Geospatial Estimates 2000-2017 | GHDx. (2021). Retrieved 6 May 2021, from http://ghdx.healthdata.org/record/ihme-data/africa-exclusive-breastfeeding-prevalence-geospatial-estimates-2000-2017</li>
+                    <li>Bhattacharjee, N.V., Schaeffer, L.E., Marczak, L.B. et al. Mapping exclusive breastfeeding in Africa between 2000 and 2017. Nat Med 25, 1205–1212 (2019). https://doi.org/10.1038/s41591-019-0525-0</li>
+                    <li>CME Info - Child Mortality Estimates. (2021). Retrieved 4 May 2021, from https://childmortality.org/data</li>
+                    <li>Millions of malnourished children in West and Central Africa have been overlooked by UN estimates – new data. (2021). Retrieved 6 May 2021, from https://theconversation.com/millions-of-malnourished-children-in-west-and-central-africa-have-been-overlooked-by-un-estimates-new-data-125767</li>
+                    <li>Roser, M., Ritchie, H., & Dadonaite, B. (2021). Child and Infant Mortality. Retrieved 4 May 2021, from https://ourworldindata.org/child-mortality#how-can-we-reduce-the-number-of-children-dying-from-pneumonia</li>
+                    <li>SRSG VAC Celebrates the 2018 Day of the African Child | UN Special Representative of the Secretary-General on Violence Against Children. (2021). Retrieved 3 May 2021, from https://violenceagainstchildren.un.org/news/srsg-vac-celebrates-2018-day-african-child</li>
+                    </p>
+        </div>      
+    <script src="myDiv.js"></script>
+ 
+  </body>
+    
